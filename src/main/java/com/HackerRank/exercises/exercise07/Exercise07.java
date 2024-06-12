@@ -22,8 +22,10 @@ public class Exercise07 {
         int length = a.length() + b.length();
         System.out.println(length);
 
-        if((b.compareTo(a) > 0)){
+        if((b.compareTo(a) > 0) || (b.compareTo(a) == 0)){
             System.out.println("No");
+        }else{
+            System.out.println("Yes");
         }
 
         System.out.println(a.substring(0, 1).toUpperCase() + a.substring(1)
