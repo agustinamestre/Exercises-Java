@@ -15,7 +15,13 @@ public class Supplier4 {
             SecureRandom random = new SecureRandom();
             StringBuilder password = new StringBuilder(8);
 
-            return "";
+            for (int i = 0; i < 8; i++) {
+                int index = random.nextInt(characters.length());
+                password.append(characters.charAt(index));
+            }
+            return password.toString();
         };
+
+        System.out.println(generarPassword.get());
     }
 }
