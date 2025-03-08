@@ -16,15 +16,11 @@ import java.util.stream.Collectors;
 @Getter
 @AllArgsConstructor
 @ToString
-class Producto1 implements Comparator<Producto1>{
+class Producto1 {
     private String nombre;
     private Double precio;
     private String categoria;
 
-    @Override
-    public int compare(Producto1 o1, Producto1 o2) {
-        return o1.getPrecio().compareTo(o2.getPrecio());
-    }
 }
 
 public class Stream15 {
