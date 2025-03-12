@@ -1,7 +1,0 @@
-Laptop, 1200.50, Electrónica
-Smartphone, 800.99, Electrónica
-Televisor, 1500.00, Electrónica
-Refrigerador, 2000.75, Electrodomésticos
-Microondas, 300.40, Electrodomésticos
-Silla Gamer, 250.00, Muebles
-Escritorio, 450.60, Muebles
