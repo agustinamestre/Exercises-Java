@@ -11,22 +11,10 @@ package com.HackerRank.exercises.stream;
 
 //Verificar si todos los estudiantes tienen una nota mayor a 5.
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.HackerRank.exercises.domain.Estudiante;
 
 import java.util.Comparator;
 import java.util.List;
-
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-class Estudiante {
-    private String nombre;
-    private int edad;
-    private double nota;
-    private String carrera;
-}
 
 public class Stream14 {
     public static void main(String[] args) {

@@ -7,23 +7,10 @@ package com.HackerRank.exercises.stream;
 //Calcular el precio promedio de venta de los productos de la categoría "Hogar".
 //Verificar si hubo alguna venta de un producto con un precio unitario superior a 1000.
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import com.HackerRank.exercises.domain.Venta;
 
 import java.util.Comparator;
 import java.util.List;
-
-@AllArgsConstructor
-@Getter @Setter
-@ToString
-class Venta {
-    private String producto;
-    private String categoria;
-    private int cantidadVendida;
-    private double precioUnitario;
-}
 
 public class Stream10 {
 

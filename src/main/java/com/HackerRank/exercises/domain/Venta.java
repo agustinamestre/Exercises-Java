@@ -5,13 +5,13 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+@AllArgsConstructor
 @Getter
 @Setter
-@AllArgsConstructor
 @ToString
-public class Producto {
-    private String nombre;
-    private Double precio;
+ public class Venta {
+    private String producto;
     private String categoria;
-    private int stock;
+    private int cantidadVendida;
+    private double precioUnitario;
 }

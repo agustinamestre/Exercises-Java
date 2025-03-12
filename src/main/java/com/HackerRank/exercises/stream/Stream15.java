@@ -16,13 +16,13 @@ public class Stream15 {
     public static void main(String[] args) {
 
         List<Producto> productos = List.of(
-                new Producto("Laptop", 1200.0, "Electrónica"),
-                new Producto("Auriculares", 300.0, "Electrónica"),
-                new Producto("Smartphone", 800.0, "Electrónica"),
-                new Producto("Libro Java", 50.0, "Libros"),
-                new Producto("Tablet", 450.0, "Electrónica"),
-                new Producto("Monitor", 600.0, "Electrónica"),
-                new Producto("Teclado", 150.0, "Electrónica")
+                new Producto("Laptop", 1200.0, "Electrónica", 10),
+                new Producto("Auriculares", 300.0, "Electrónica", 10),
+                new Producto("Smartphone", 800.0, "Electrónica", 10),
+                new Producto("Libro Java", 50.0, "Libros", 10),
+                new Producto("Tablet", 450.0, "Electrónica", 10),
+                new Producto("Monitor", 600.0, "Electrónica", 10),
+                new Producto("Teclado", 150.0, "Electrónica", 10)
         );
 
         var productosElectronica = productos.stream()

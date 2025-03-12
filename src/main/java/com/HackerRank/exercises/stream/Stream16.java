@@ -2,7 +2,7 @@ package com.HackerRank.exercises.stream;
 
 
 //Dado un listado de productos, debes:
-//
+
 //Filtrar los productos que cuesten más de $500.
 //Transformar los nombres a mayúsculas.
 //Agrupar los productos por categoría.
@@ -18,13 +18,13 @@ public class Stream16 {
     public static void main(String[] args) {
 
         List<Producto> productos = Arrays.asList(
-                new Producto("Laptop", 1200.50, "Electrónica"),
-                new Producto("Smartphone", 800.99, "Electrónica"),
-                new Producto("Zapatillas", 120.75, "Moda"),
-                new Producto("TV", 1500.00, "Electrónica"),
-                new Producto("Camisa", 50.00, "Moda"),
-                new Producto("Cafetera", 300.00, "Hogar"),
-                new Producto("Refrigerador", 900.00, "Electrodomésticos")
+                new Producto("Laptop", 1200.50, "Electrónica", 10),
+                new Producto("Smartphone", 800.99, "Electrónica", 10),
+                new Producto("Zapatillas", 120.75, "Moda", 10),
+                new Producto("TV", 1500.00, "Electrónica", 10),
+                new Producto("Camisa", 50.00, "Moda", 10),
+                new Producto("Cafetera", 300.00, "Hogar", 10),
+                new Producto("Refrigerador", 900.00, "Electrodomésticos", 10)
         );
 
         var productosPrecioMayorA500 = productos.stream()

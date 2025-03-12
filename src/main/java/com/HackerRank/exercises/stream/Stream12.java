@@ -4,23 +4,10 @@ package com.HackerRank.exercises.stream;
 //Aumenta el salario de estos empleados en un 10%.
 //Devuelve una lista con los nombres de estos empleados en orden alfabético.
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import com.HackerRank.exercises.domain.Empleado1;
 
 import java.util.Comparator;
 import java.util.List;
-@AllArgsConstructor
-@Getter
-@Setter
-@ToString
-class Empleado1 {
-    private String nombre;
-    private int edad;
-    private double salario;
-    private String departamento;
-}
 
 public class Stream12 {
     public static void main(String[] args) {

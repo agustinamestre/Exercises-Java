@@ -1,4 +1,4 @@
-package com.HackerRank.exercises.domain;
+package com.HackerRank.exercises.spliterator;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,9 +9,8 @@ import lombok.ToString;
 @Setter
 @AllArgsConstructor
 @ToString
-public class Producto {
+public class Producto2 {
     private String nombre;
-    private Double precio;
+    private Integer precio;
     private String categoria;
-    private int stock;
 }
