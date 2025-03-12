@@ -13,37 +13,23 @@ package com.HackerRank.exercises.stream;
 
 //Verificar si hay algún producto con un precio inferior a 50.
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import com.HackerRank.exercises.domain.Producto;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.OptionalDouble;
 
-
-@Getter @Setter
-@ToString
-@AllArgsConstructor
-class Producto {
-    private String nombre;
-    private String categoria;
-    private double precio;
-    private int stock;
-}
-
 public class Stream9 {
 
     public static void main(String[] args) {
         List<Producto> productos = List.of(
-                new Producto("Laptop", "Electrónica", 1200, 5),
-                new Producto("Televisor", "Electrónica", 800, 15),
-                new Producto("Silla", "Hogar", 150, 30),
-                new Producto("Mesa", "Hogar", 300, 8),
-                new Producto("Celular", "Electrónica", 900, 12),
-                new Producto("Lámpara", "Hogar", 50, 25),
-                new Producto("Audífonos", "Electrónica", 100, 50)
+                new Producto("Laptop", 1200.00,"Electrónica", 5),
+                new Producto("Televisor", 800.00, "Electrónica", 15),
+                new Producto("Silla", 150.00,"Hogar",  30),
+                new Producto("Mesa", 300.00,"Hogar",  8),
+                new Producto("Celular",900.00 ,"Electrónica", 12),
+                new Producto("Lámpara", 50.00, "Hogar", 25),
+                new Producto("Audífonos", 100.00, "Electrónica", 50)
         );
 
         List<String> productoElectronica = productos.stream()

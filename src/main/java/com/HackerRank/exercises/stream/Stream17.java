@@ -24,19 +24,19 @@ public class Stream17 {
 
         List<Pedido> pedidos = Arrays.asList(
                 new Pedido(1, "Juan", Arrays.asList(
-                        new Producto("Laptop", 1200.0, "Electrónica"),
-                        new Producto("Mouse", 25.0, "Accesorios"),
-                        new Producto("Teclado", 45.0, "Accesorios")
+                        new Producto("Laptop", 1200.0, "Electrónica", 10),
+                        new Producto("Mouse", 25.0, "Accesorios", 10),
+                        new Producto("Teclado", 45.0, "Accesorios", 10)
                 )),
                 new Pedido(2, "Ana", Arrays.asList(
-                        new Producto("Zapatillas", 80.0, "Moda"),
-                        new Producto("Camiseta", 20.0, "Moda"),
-                        new Producto("Laptop", 1200.0, "Electrónica")
+                        new Producto("Zapatillas", 80.0, "Moda", 10),
+                        new Producto("Camiseta", 20.0, "Moda", 10),
+                        new Producto("Laptop", 1200.0, "Electrónica", 10)
                 )),
                 new Pedido(3, "Pedro", Arrays.asList(
-                        new Producto("Smartphone", 800.0, "Electrónica"),
-                        new Producto("Audífonos", 50.0, "Accesorios"),
-                        new Producto("Camiseta", 20.0, "Moda")
+                        new Producto("Smartphone", 800.0, "Electrónica", 10),
+                        new Producto("Audífonos", 50.0, "Accesorios", 10),
+                        new Producto("Camiseta", 20.0, "Moda", 10)
                 ))
         );
 
