@@ -10,6 +10,7 @@ import lombok.ToString;
 @Setter
 @ToString
  public class Venta {
+    private String vendedor;
     private String producto;
     private String categoria;
     private int cantidadVendida;

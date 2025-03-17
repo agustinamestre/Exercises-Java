@@ -17,13 +17,13 @@ public class Stream10 {
     public static void main(String[] args) {
 
         List<Venta> ventas = List.of(
-                new Venta("Laptop", "Electrónica", 2, 1200),
-                new Venta("Televisor", "Electrónica", 1, 800),
-                new Venta("Silla", "Hogar", 5, 150),
-                new Venta("Mesa", "Hogar", 3, 300),
-                new Venta("Celular", "Electrónica", 4, 900),
-                new Venta("Lámpara", "Hogar", 7, 50),
-                new Venta("Audífonos", "Electrónica", 6, 100)
+                new Venta("Ana", "Laptop", "Electrónica", 2, 1200),
+                new Venta("Ana","Televisor", "Electrónica", 1, 800),
+                new Venta("Ana","Silla", "Hogar", 5, 150),
+                new Venta("Ana","Mesa", "Hogar", 3, 300),
+                new Venta("Ana","Celular", "Electrónica", 4, 900),
+                new Venta("Ana","Lámpara", "Hogar", 7, 50),
+                new Venta("Ana","Audífonos", "Electrónica", 6, 100)
         );
 
         var totalDeIngresos = ventas.stream()
