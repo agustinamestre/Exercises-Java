@@ -44,9 +44,6 @@ public class Stream20 {
                 .orElse("Ninguno");
 
         System.out.println("Vendedor con más ingresos: " + vendedorConMasIngresos);
-
-
-        System.out.println(vendedorConMasIngresos);
         System.out.println("--------------------------");
 
         var productosVendidosPorVendedor = ventas.stream()
@@ -55,7 +52,8 @@ public class Stream20 {
                         ));
 
         productosVendidosPorVendedor.forEach((vendedor, productos) -> {
-            System.out.println("Vendedor: " + vendedor + productos);
+            System.out.println("Vendedor: " + vendedor);
+            productos.keySet().forEach(System.out::println);
         });
     }
 
