@@ -6,17 +6,12 @@ public class PalindromeNumber {
         PalindromeNumber palindromeNumber = new PalindromeNumber();
         var resultado =  palindromeNumber.isPalindrome(x);
         System.out.println(resultado);
-
     }
 
     public boolean isPalindrome(int x) {
 
         var numeroComoTexto  = String.valueOf(x);
         var longitudNumero = numeroComoTexto.length();
-
-        if(numeroComoTexto.charAt(0) == '-'){
-            return false;
-        }
 
         for(int j = 0; j < longitudNumero / 2; j++){
             if(numeroComoTexto.charAt(j) != numeroComoTexto.charAt(longitudNumero - 1 - j)){
