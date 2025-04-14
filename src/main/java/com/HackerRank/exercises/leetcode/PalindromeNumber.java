@@ -10,9 +10,19 @@ public class PalindromeNumber {
     }
 
     public boolean isPalindrome(int x) {
-        var original = String.valueOf(x);
-        var reverso = new StringBuilder(original).reverse().toString();
 
-        return original.equals(reverso);
+        var numeroComoTexto  = String.valueOf(x);
+        var longitudNumero = numeroComoTexto.length();
+
+        if(numeroComoTexto.charAt(0) == '-'){
+            return false;
+        }
+
+        for(int j = 0; j < longitudNumero / 2; j++){
+            if(numeroComoTexto.charAt(j) != numeroComoTexto.charAt(longitudNumero - 1 - j)){
+                return false;
+            }
+        }
+        return true;
     }
 }
